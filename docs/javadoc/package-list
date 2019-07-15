@@ -1,0 +1,7 @@
+io.realm
+io.realm.annotations
+io.realm.exceptions
+io.realm.log
+io.realm.permissions
+io.realm.rx
+io.realm.sync.permissions
