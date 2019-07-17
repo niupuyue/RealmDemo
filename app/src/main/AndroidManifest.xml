@@ -19,6 +19,7 @@
         </activity>
         <activity android:name=".officedemo.OfficeDemoActivity" />
         <activity android:name=".selfdemo.SelfDemoActivity" />
+        <activity android:name=".callbackdemo.CallbackActivity" />
     </application>
 
 </manifest>

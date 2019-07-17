@@ -1,6 +1,8 @@
 package com.paulniu.myapplication;
 
 
+import java.util.Date;
+
 import io.realm.DynamicRealm;
 import io.realm.FieldAttribute;
 import io.realm.RealmMigration;
@@ -38,10 +40,20 @@ public class MyMigration implements RealmMigration {
 //            oldVersion++;
 //        }
         // 升级版本测试
-        if (oldVersion == 2){
+        if (oldVersion == 2) {
             schema.get("Emp")
                     .removeField("depno")
-                    .addRealmObjectField("depno",schema.get("Dept"));
+                    .addRealmObjectField("depno", schema.get("Dept"));
+        }
+        if (oldVersion == 3) {
+            schema.create("Student")
+                    .addField("name", String.class)
+                    .addField("id", long.class)
+                    .addField("age", int.class)
+                    .addField("school", String.class)
+                    .addField("address", String.class)
+                    .addField("joindate", Date.class)
+                    .isPrimaryKey("id");
         }
     }
 }

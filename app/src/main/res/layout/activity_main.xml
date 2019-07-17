@@ -19,4 +19,10 @@
         android:layout_height="wrap_content"
         android:text="自己的小例子" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_callback"
+        android:text="带有回调的例子"/>
+
 </LinearLayout>

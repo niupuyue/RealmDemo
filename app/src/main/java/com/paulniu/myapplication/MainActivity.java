@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.paulniu.myapplication.callbackdemo.CallbackActivity;
 import com.paulniu.myapplication.officedemo.OfficeDemoActivity;
 import com.paulniu.myapplication.selfdemo.SelfDemoActivity;
 
@@ -30,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SelfDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_callback).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CallbackActivity.class);
                 startActivity(intent);
             }
         });
