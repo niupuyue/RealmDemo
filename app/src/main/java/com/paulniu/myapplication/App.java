@@ -20,7 +20,7 @@ public class App extends Application {
         Realm.init(this);
         RealmConfiguration config = new RealmConfiguration.Builder()
                 .name("office.realm")
-                .schemaVersion(2)
+                .schemaVersion(3)
                 .migration(new MyMigration())
                 .build();
         Realm.setDefaultConfiguration(config);

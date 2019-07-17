@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.paulniu.myapplication.officedemo.OfficeDemoActivity;
+import com.paulniu.myapplication.selfdemo.SelfDemoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, OfficeDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.btn_self_demo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SelfDemoActivity.class);
                 startActivity(intent);
             }
         });

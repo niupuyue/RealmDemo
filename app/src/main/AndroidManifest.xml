@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".officedemo.OfficeDemoActivity" />
+        <activity android:name=".selfdemo.SelfDemoActivity" />
     </application>
 
 </manifest>
